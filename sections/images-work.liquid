@@ -1,0 +1,74 @@
+<div id="section1_e">
+  <div class="image_card_e">
+
+    <h3> {{ section.settings.text-box }} </h3>
+
+{% for block in section.blocks %}
+
+  <a href="{{ block.settings.link }}">
+    <img class="image_e" src="{{ block.settings.image | img_url: 'x800' }}">
+
+    <p class="text_e">
+            Hello World!
+       </p>
+  </a>
+
+
+{% endfor %}
+
+  </div>
+
+</div>
+
+<div class="padding_e">
+  <h3>h</h3>
+</div>
+
+{% schema %}
+{
+      "name": "Image Cards",
+      "settings": [
+      {
+        "id": "text-box",
+        "type": "text",
+        "label": "Heading",
+        "default": "Title"
+      }
+    ],
+      "blocks": [
+      {
+        "type": "image_picker",
+        "name": "Add Image",
+        "settings": [
+          {
+            "id": "link",
+            "type": "url",
+            "label": "Button link"
+            },
+            {
+              "id": "image",
+              "type": "image_picker",
+              "label": "Image Upload"
+            }
+          ]
+        }
+      ],
+      "presets": [
+      {
+        "name": "Image Cards",
+        "category": "Call to Action",
+        "blocks": [
+        {
+          "type": "image_picker"
+        },
+        {
+          "type": "image_picker"
+    }
+  ]
+}
+]
+}
+{% endschema %}
+
+<!-- Add in blocks to schema
+Add for loop around images -->
