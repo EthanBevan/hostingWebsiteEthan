@@ -4333,24 +4333,47 @@ padding: 30px;
 Small images section*/
 
 .padding_e_small h3 {
-  padding: 300px 0px 100px 0px;
+  padding: 200px 0px 0px 0px;
   color: white;
 }
 
 /*Images small*/
 
-div.gallery_e_small {
-      
+div.gallery_e_small img {
+max-height: 100%;
+    left: 35%;
+
  
 }
 
-.image_card_e_small img {
+.image_e_small {
+
+
+position: relative;
+    float: left;
+    width:  200px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+
+}
+
+.image_e_small img {
+
+  
+}
+
+
+
+/*.image_card_e_small img {
 width: 50%;
-  /*margin: 1px auto;*/
+  margin: 1px auto;
   display: block;
   float: left;
+
  
-}
+}*/
 
 .image_card_e_small img:hover {
   opacity: 0.8;
@@ -4367,7 +4390,7 @@ padding: 30px;
 
 }
 
-.text_e_small
+/*.text_e_small
 {
     display: none;
     // z-index:100;
@@ -4377,11 +4400,11 @@ padding: 30px;
     // font-weight:bold;
     // left:150px;
     // top:350px;
-}
+}*/
 
 /* Iphone */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 680px) {
 /* your CSS here */
 .image_card_e_small img {
   width: 100%;
@@ -4392,6 +4415,151 @@ padding: 30px;
   padding: 0px 0px 0px 0px;
   color: white;
 }
+
+.image_e_small {
+height: auto;
+width: auto;
+margin: 0 auto;
 }
+
+div.gallery_e_small img {
+max-height: 100%;
+    left: 0%;
+     padding: 0px 50px 0px 50px;
+}
+
+.padding_e_small h3 {
+
+}
+}
+
+
+/*NEW SECTION*/
+
+
+
+
+
+
+
+/*Medium section 3 images*/
+
+
+
+.padding_e_experience h3 {
+  padding: 200px 0px 0px 0px;
+  color: white;
+}
+
+/*Images experience*/
+
+div.gallery_e_experience img {
+max-height: 100%;
+    left: 15%;
+
+ 
+}
+
+.image_e_experience {
+
+
+position: relative;
+    float: left;
+    width:  auto;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+
+}
+
+.image_e_experience img {
+
+  
+}
+
+
+
+/*.image_card_e_experience img {
+width: 50%;
+  margin: 1px auto;
+  display: block;
+  float: left;
+
+ 
+}*/
+
+.image_card_e_experience img:hover {
+  opacity: 0.8;
+  transition: 0.1s;
+}
+
+
+
+
+.image_card_e_experience h3 {
+
+text-align: center;
+padding: 30px;
+
+}
+
+/*.text_e_experience
+{
+    display: none;
+    // z-index:100;
+    position:absolute;
+    color:black;
+    // font-size:24px;
+    // font-weight:bold;
+    // left:150px;
+    // top:350px;
+}*/
+
+/* Iphone */
+
+@media only screen and (max-width: 680px) {
+/* your CSS here */
+.image_card_e_experience img {
+  width: 100%;
+  float: left;
+}
+
+.padding_e_experience h3 {
+  padding: 300px 0px 0px 0px;
+  color: white;
+}
+
+.image_e_experience {
+width: 100px;
+height: auto;
+margin: 0 auto;
+}
+
+div.gallery_e_experience img {
+max-height: 100%;
+    left: 0%;
+     padding: 0px 50px 0px 50px;
+}
+
+.padding_e_experience h3 {
+
+}
+}
+
+
+/*again*/
+
+.icons_e {
+text-align: center;
+
+}
+
+.icons_e a {
+  color: black;
+    text-decoration: none;
+    padding: 20px;
+}
+
 
 

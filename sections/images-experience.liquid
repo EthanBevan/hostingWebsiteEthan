@@ -1,15 +1,15 @@
-<div id="section1_e_small">
-  <div class="image_card_e_small">
+<div id="section1_e_experience">
+  <div class="image_card_e_experience">
 
     <h3> {{ section.settings.text-box }} </h3>
 
 {% for block in section.blocks %}
 
-<div class="gallery_e_small">
+<div class="gallery_e_experience">
   <a href="{{ block.settings.link }}">
-    <img class="image_e_small" src="{{ block.settings.image | img_url: 'x800' }}">
+    <img class="image_e_experience" src="{{ block.settings.image | img_url: 'x800' }}">
 
- <!--    <p class="text_e_small">
+ <!--    <p class="text_e_experience">
             Hello World!
        </p> -->
   </a>
@@ -21,13 +21,13 @@
 
 </div>
 
-<div class="padding_e_small">
+<div class="padding_e_experience">
   <h3>h</h3>
 </div>
 
 {% schema %}
 {
-      "name": "Image Small",
+      "name": "Image Experience",
       "settings": [
       {
         "id": "text-box",
@@ -56,7 +56,7 @@
       ],
       "presets": [
       {
-        "name": "Image Small",
+        "name": "Image Experience",
         "category": "Call to Action",
         "blocks": [
         {

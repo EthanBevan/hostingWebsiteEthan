@@ -227,47 +227,7 @@
                   </li>
                 {% endif %}
 
-                {% if section.settings.search == 'page' or section.settings.search == 'modal' %}
-                  {% assign search_modal = true %}
-                  {% if section.settings.search == 'page' %}
-                    {% assign search_modal = false %}
-                  {% endif %}
-                  <li class="site-nav__item site-nav__item--compressed">
-                    <a href="/search" class="site-nav__link site-nav__link--icon{% if search_modal %} js-toggle-search-modal{% endif %}" data-mfp-src="#SearchModal">
-                      <span class="icon-fallback-text">
-                        <span class="icon icon-search" aria-hidden="true"></span>
-                        <span class="fallback-text">{{ 'general.search.title' | t }}</span>
-                      </span>
-                    </a>
-                  </li>
-                {% endif %}
-
-                <li class="site-nav__item site-nav__item--compressed">
-                  <a href="/cart" class="site-nav__link site-nav__link--icon cart-link js-drawer-open-button-right" aria-controls="CartDrawer">
-                    <span class="icon-fallback-text">
-                      <span class="icon icon-cart" aria-hidden="true"></span>
-                      <span class="fallback-text">{{ 'layout.cart.title' | t }}</span>
-                    </span>
-                    <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span>
-                  </a>
-                </li>
-
-              </ul>
-              <!-- //site-nav -->
-            </nav>
-            <div class="grid__item large--hide one-quarter">
-              <div class="site-nav--mobile text-right">
-                <a href="/cart" class="site-nav__link cart-link js-drawer-open-button-right" aria-controls="CartDrawer">
-                  <span class="icon-fallback-text">
-                    <span class="icon icon-cart" aria-hidden="true"></span>
-                    <span class="fallback-text">{{ 'layout.cart.title' | t }}</span>
-                  </span>
-                  <span class="cart-link__bubble{% if cart.item_count > 0 %} cart-link__bubble--visible{% endif %}"></span>
-                </a>
-              </div>
-            </div>
-          </div>
-
+               
         </div>
       </header>
     </div>

@@ -2,7 +2,7 @@
   <div class="container">
     <h3> {{ section.settings.text-box }} </h3>
 
-    <a href="{{ section.settings.link }}" class="buttonCallToAction">{{ section.settings.linktext }}</a>
+    <a href="{{ section.settings.link }}" class="buttonCallToAction" target="_blank">{{ section.settings.linktext }} </a>
 
   </div>
 
@@ -10,7 +10,7 @@
 
 {% schema %}
 {
-    "name": "Call to action",
+    "name": "Resume Button",
     "settings": [
     {
       "id": "text-box",
@@ -33,7 +33,7 @@
     ,
       "presets": [
       {
-        "name": "Call to Action",
+        "name": "Resume Button",
         "category": "Call to Action"
     }
   ]
